@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        h1:hover{
+            color: green;
+        }
+        .visited:visited{
+            color: blue;
+        }
+        .focus:focus{
+            font-weight: 700;
+            font-size: large;
+            color: pink;
+        }
+        li:first-child{
+            color:aqua;
+        }
+        li:last-child{
+            color: violet;
+        }
+        li:nth-child(2n){
+            color: red;
+        }
+        li:nth-child(2n+1){
+            color: green;
+        }
+        h3::before{
+            content: 'I ';
+        }
+        h3::after{
+            content: ' uWu';
+        }
+    </style>
+</head>
+<body>
+    <h1 title="this is toolkit">This is a heading</h1>
+    <a href="https://github.com/">github visited</a><br>
+    <a href="https://github.com/" class="visited">github visited but Pseudo</a><br>
+    <input type="text"><br>
+    <input type="text" class="focus">
+    <h3>love oyu</h3>
+    <h3>love oyu</h3>
+    <h3>love oyu</h3>
+    <ul>
+        <li>google</li>
+        <li>facebook</li>
+        <li>twitter</li>
+        <li>reddit</li>
+        <li>youtube</li>
+        <li>linkdin</li>
+    </ul>
+</body>
+</html>
